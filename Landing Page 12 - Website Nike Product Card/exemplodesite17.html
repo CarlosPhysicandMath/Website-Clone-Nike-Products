@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Glassmorphism Product Card UI</title>
+	<link rel="stylesheet" type="text/css" href="exemplodesite17.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<ul class="thumb">
+			<li onmouseover="changeImageSrc('shoes1.png')"><img src="shoes1.png"></li>
+			<li onmouseover="changeImageSrc('shoes2.png')"><img src="shoes2.png"></li>
+			<li onmouseover="changeImageSrc('shoes3.png')"><img src="shoes3.png"></li>
+		</ul>
+		<div class="imgbox">
+			<h2> Nike Air Zoom</h2>
+			<img src="shoes1.png" class="shoess">
+			<ul class="size">
+				<span> Size </span>
+				<li>39</li>
+				<li>40</li>
+				<li>41</li>
+				<li>42</li>
+				<li>43</li>
+			</ul>
+			<a href="#" class="btn">Add To Card </a>
+	</div>
+
+
+	<script>
+		function changeImageSrc(anything){
+			document.querySelector('.shoess').src = anything;
+		}
+	</script>
+</body>
+</html>
